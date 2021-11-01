@@ -66,7 +66,6 @@ const listEvents = (root, store, render) => {
       const id = +event.target.getAttribute("data-item-id");
       const type = event.target.getAttribute("data-type");
 
-      console.log(id, type);
       store = {
         ...store,
         todoList: store.todoList.map((item) =>

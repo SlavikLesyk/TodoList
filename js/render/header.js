@@ -1,5 +1,4 @@
 const renderHeader = (store, postId) => {
-  console.log(postId);
   let inputText = "";
   let activeRadio = store.defaultPriority;
 

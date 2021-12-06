@@ -231,9 +231,7 @@ body {
 
 .todo-list__dropdown-wrap {
   text-align: center;
-  width: 150px;
   margin: 0 30px;
-  position: relative;
 }
 
 .todo-list__priority {
@@ -246,7 +244,7 @@ body {
 }
 
 .dropdown {
-  max-width: 150px;
+  width: 150px;
   position: relative;
 }
 
@@ -382,4 +380,13 @@ input[value="high"] + label {
 
 .hidden {
   display: none;
+}
+ 
+@media screen and (max-width: 768px) {
+  .dropdown{ 
+    width: 80px;
+  }
+  .todo-list__dropdown-wrap{
+    margin: 0 15px;
+  }
 }

@@ -1,9 +1,8 @@
-import headerEvents from "./header-events.js";
-import listEvents from "./list-events.js";
+import modalEvents from "./modalEvents.js";
+import listEvents from "./listEvents.js";
 
-const initEvents = (root, store, render) => {
-  headerEvents(root, store, render);
-  listEvents(root, store, render);
+const initEvents = (render) => {
+  listEvents(render);
 };
 
 export default initEvents;

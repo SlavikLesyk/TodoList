@@ -24,11 +24,15 @@ const STORE = {
       text: "Call to Masha",
       isDone: false,
     },
-
   ],
   activePost: null,
-  defaultPriority: 'medium',
   visibleBox: null,
+  defaultPriority: 'medium',
+  categories: ["high", "medium", "low"],
 };
 
+const parseStore = () => JSON.parse(window.localStorage.getItem('store'))
+const saveStore = (store) => window.localStorage.setItem('store', JSON.stringify(store))
+
+export {parseStore, saveStore}
 export default STORE;
